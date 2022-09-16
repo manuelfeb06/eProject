@@ -34,98 +34,22 @@ a:active, a i:active{text-decoration: none; color: #0a53be; cursor: pointer}
 
 
 /* ------------------ A) PHẦN HEADER ------------------ */
-/* --------------- A1) Phần PINK-HEADER --------------- */
 header .container{
-    /*Thêm 2 thuộc tính cho container*/
+    /*Thêm thuộc tính cho container*/
     display: flex;
     justify-content: space-between;
-}
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 3; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: transparent;
-    backdrop-filter: blur(6px) opacity(1);
-
-}
-/* Modal Content/Box */
-.modal-content {
-    background-color: #fdedf0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    padding: 55px;
-    width: 600px;
-    text-align: center;
-    letter-spacing: normal;
-    word-spacing: normal;
-}
-/* The Close Button */
-.close {
-    background-color: #fdedf0;
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    line-height: 0.6;
-    font-size: 50px;
-    font-weight: bold;
-    cursor: pointer;
-}
-.modal-name{
-    background-color: #fdedf0;
-    font-size: 13px;
-    font-weight: 600;
-    margin-bottom: 15px;
-}
-.modal-title{
-    background-color: #fdedf0;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 28px;
-    font-weight: 600;
-    margin-bottom: 15px;
-}
-.modal-excerpt{
-    background-color: #fdedf0;
-    color: #858585;
-    font-size: 14px;
-    margin-bottom: 15px;
-    text-transform: none;
-}
-.modal-content .modal-form-container form{
-    background-color: #fdedf0;
-    display: flex;
-    justify-content: space-between;
-}
-.modal-content .modal-form-container form input[name="first-name"] {
-    flex-basis: 39%;
-    width: 39%;
-}
-.modal-content .modal-form-container form input[name="email-address"] {
-    flex-basis: 39%;
-    width: 39%;
-}
-.modal-content .modal-form-container form button{
-    flex-basis: 20%;
-    width: 20%;
-    margin-left: 0;
 }
 /* --------------- A2) Phần MAIN-HEADER --------------- */
 .main-header{
-    padding: 15px 0;
+    padding: 0;
 }
 .main-header .site-logo{
-    width: 36%;
+    width: 18%;
+    padding-top: 20px;
 }
 .main-header .categories-nav{
     width: 38%;
-    padding: 10px 0;
+    padding-top: 20px;
 }
 .categories-nav ul{
     list-style: none;
@@ -141,15 +65,15 @@ header .container{
     transform: scale(1.1);
 }
 .categories-nav img{
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     display: block;
     margin: 0 auto 5px;
 }
 .header-search{
     width: 21%;
     float: none;
-    padding: 23px 0;
+    padding-top: 20px;
 }
 .search-form{
     width: 100%;
@@ -193,7 +117,7 @@ header .container{
     display: none;
 }
 .sticky-header .site-logo{
-    width: 26%;
+    width: 15%;
     display: flex;
     align-items: center;
 }
@@ -262,7 +186,7 @@ nav{
     border-top: 1px solid #4169e1;
     box-sizing: border-box;
     max-width: 100%;
-    background-color: steelblue;
+    background-color: skyblue;
 }
 .nav .container{
     height: 50px;
@@ -279,7 +203,7 @@ nav{
 }
 /* ------------ Style menu dropdown ---------------*/
 .dropbtn{
-    background-color: steelblue;
+    background-color: skyblue;
     color: #212121;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
