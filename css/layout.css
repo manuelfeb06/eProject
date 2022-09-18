@@ -14,6 +14,10 @@ body{
 img{
     max-width: 100%;
 }
+video{
+    max-width: 100%;
+    max-height: 50%;
+}
 .section{
     float: left;
     width: 100%;
@@ -187,6 +191,7 @@ nav{
     box-sizing: border-box;
     max-width: 100%;
     background-color: skyblue;
+    text-align: center;
 }
 .nav .container{
     height: 50px;
@@ -222,8 +227,7 @@ nav{
     position: absolute;
     min-width: 200px;
     padding: 16px 0;
-    border-left: 5px solid #4169e1;
-    box-shadow: 0 8px 16px 0 royalblue;
+    border-left: 5px solid skyblue;
     z-index: 1;
 }
 .dropdown-content a{
@@ -242,14 +246,38 @@ nav{
     color: #4169e1;
 }
 
-
-.main .container{
-    overflow: hidden;
+/* Secsion main */
+.page-cta_title{
+    font-family: 'Josefin Sans', sans-serif;
 }
+.page-cta_title_wc{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 35px;
+}
+.page-cta_content{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px;
+}
+.page-cta_button{
+    width: 20%;
+    height: 10%;
+    background-color: skyblue;
+    color: #212121;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    border: 2px solid royalblue;
+    text-align: center;
+}
+
+
+
+
+/* FOOTER*/
 footer {
     margin-top: 35px;
-    background-image: url("../images/background-nav.jpg");
-    background-size: cover;
+    background-color: skyblue;
     background-position: top center;
     background-repeat: no-repeat;
     padding: 70px 0 0;
@@ -260,35 +288,13 @@ footer {
 
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-    footer {
-        padding: 90px 0 0
-    }
-}
-
 footer .ant-mailchimp {
     display: flex
 }
-
-@media (max-width: 767px) {
-    footer .ant-mailchimp {
-        flex-direction: column
-    }
-}
-
 footer .ant-mailchimp .ant-newsletter-title {
     padding-right: 15px;
     border-right: 2px solid #000000;
 }
-
-@media (max-width: 767px) {
-    footer .ant-mailchimp .ant-newsletter-title {
-        padding-right: 0;
-        border-right: none;
-        margin-bottom: 15px
-    }
-}
-
 footer .ant-mailchimp .ant-newsletter-title .title {
     font-size: 24px;
     font-weight: 600;
@@ -308,12 +314,6 @@ footer .ant-mailchimp .ant-mailchim-form {
     display: flex;
     margin: auto;
     margin-left: 30px
-}
-
-@media (max-width: 767px) {
-    footer .ant-mailchimp .ant-mailchim-form {
-        margin-left: 0
-    }
 }
 
 footer .ant-mailchimp .ant-mailchim-form form {
@@ -338,19 +338,19 @@ footer .ant-mailchimp .ant-mailchim-form form input {
 }
 
 footer .ant-mailchimp .ant-mailchim-form form input::-webkit-input-placeholder {
-    color: black;
+    color: whitesmoke;
 }
 
 footer .ant-mailchimp .ant-mailchim-form form input::-moz-placeholder {
-    color: black;
+    color: whitesmoke;
 }
 
 footer .ant-mailchimp .ant-mailchim-form form input:-ms-input-placeholder {
-    color: black;
+    color: whitesmoke;
 }
 
 footer .ant-mailchimp .ant-mailchim-form form input:-moz-placeholder {
-    color: black;
+    color: whitesmoke;
 }
 
 footer .ant-mailchimp .ant-mailchim-form form button {
@@ -359,8 +359,8 @@ footer .ant-mailchimp .ant-mailchim-form form button {
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
-    background-color: royalblue;
-    color: #fff;
+    background-color: skyblue;
+    color: black;
     border: none;
     outline: none;
     box-shadow: none;
@@ -377,7 +377,7 @@ footer .ant-mailchimp .ant-mailchim-form form button {
 
 footer .ant-mailchimp .ant-mailchim-form form button:hover,
 footer .ant-mailchimp .ant-mailchim-form form button:focus {
-    color: #fff;
+    color: black;
     background-color: royalblue;
     border: none;
     outline: none;
@@ -388,13 +388,6 @@ footer .footer-main {
     margin-top: 50px;
     margin-bottom: 20px
 }
-
-@media (max-width: 767px) {
-    footer .footer-main {
-        margin-top: 30px
-    }
-}
-
 footer .footer-main .footer-nav-logo {
     color: #fff
 }
@@ -414,32 +407,27 @@ footer .footer-main .footer-nav-logo .footer-slogan {
 }
 
 footer .footer-main .footer-nav-logo .footer-slogan a {
-    color: #008374;
+    color: royalblue;
     font-weight: 700
 }
 
 footer .footer-main .footer-nav-logo .footer-slogan a:hover,
 footer .footer-main .footer-nav-logo .footer-slogan a:focus {
-    color: #005047
+    color: royalblue;
 }
 
 footer .footer-main .footer-nav-logo .footer-tel,
 footer .footer-main .footer-nav-logo .evo-in {
-    color: #fff;
+    color: black;
     font-weight: 700;
     margin-bottom: 8px
-}
-
-footer .footer-main .footer-nav-logo .footer-tel a,
-footer .footer-main .footer-nav-logo .evo-in a {
-    color: #fff
 }
 
 footer .footer-main .footer-nav-logo .footer-tel a:hover,
 footer .footer-main .footer-nav-logo .footer-tel a:focus,
 footer .footer-main .footer-nav-logo .evo-in a:hover,
 footer .footer-main .footer-nav-logo .evo-in a:focus {
-    color: #008374
+    color: royalblue;
 }
 
 footer .footer-main .footer-nav-logo .social {
@@ -450,7 +438,7 @@ footer .footer-main .footer-nav-logo .social a {
     height: 40px;
     width: 40px;
     line-height: 40px;
-    background-color: #fff;
+    background-color: black;
     border-radius: 50%;
     display: inline-block;
     position: relative
@@ -476,7 +464,7 @@ footer .footer-main .footer-nav-logo .social a+a {
 }
 
 footer .footer-main .footer-nav-logo .social a:hover {
-    background-color: #008374
+    background-color: royalblue;
 }
 
 footer .footer-main .footer-nav-logo .social a:hover svg path {
@@ -491,7 +479,7 @@ footer .footer-main .footer-nav-logo .social a:hover svg path {
 
 footer .footer-main .footer-nav-menu .footer-title {
     display: block;
-    color: #fff;
+    color: black;
     font-size: 18px;
     font-weight: 700
 }
@@ -504,7 +492,7 @@ footer .footer-main .footer-nav-menu .footer-menu a {
 
 footer .footer-main .footer-nav-menu .footer-menu a:hover,
 footer .footer-main .footer-nav-menu .footer-menu a:focus {
-    color: #008374
+    color: royalblue;
 }
 
 footer .footer-main .footer-nav-menu .footer-menu a+a {
@@ -524,7 +512,7 @@ footer .copyright a {
 
 footer .copyright a:hover,
 footer .copyright a:focus {
-    color: #008374
+    color: royalblue;
 }
 
 footer .back-to-top {
@@ -533,7 +521,7 @@ footer .back-to-top {
     bottom: 60px;
     font-size: 14px;
     cursor: pointer;
-    color: #fff;
+    color: black;
     top: auto !important;
     height: 40px;
     width: 40px;
@@ -549,9 +537,9 @@ footer .back-to-top {
 }
 
 footer .back-to-top:hover {
-    color: #fff;
-    background-color: #008374;
-    border-color: #005a50
+    color: white;
+    background-color: skyblue;
+    border-color: royalblue;
 }
 
 footer .back-to-top.show {
