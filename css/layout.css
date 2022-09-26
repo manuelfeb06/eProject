@@ -32,8 +32,8 @@ video{
 /* ------ đổi màu khi chỉ vào -------- */
 a:link, a i:link{text-decoration: none; color: black}
 a:visited, a i:visited{text-decoration: none}
-a:hover, a i:hover{text-decoration: blink; color: #0b5ed7; cursor: pointer}
-a:active, a i:active{text-decoration: none; color: #0a53be; cursor: pointer}
+a:hover, a i:hover{text-decoration: blink; color: royalblue; cursor: pointer}
+a:active, a i:active{text-decoration: none; color: royalblue; cursor: pointer}
 
 
 
@@ -206,6 +206,9 @@ nav{
     width: 20%;
     padding-top: 14px;
 }
+.link-nav{
+    color: black;
+}
 /* ------------ Style menu dropdown ---------------*/
 .dropbtn{
     background-color: skyblue;
@@ -234,6 +237,7 @@ nav{
     padding: 2px 16px;
     text-decoration: none;
     display: block;
+    color: black;
 
 }
 .dropdown-content a:hover{
@@ -260,8 +264,8 @@ nav{
     font-size: 24px;
 }
 .page-cta_button{
-    width: 20%;
-    height: 10%;
+    width: 100%;
+    height: 100%;
     background-color: skyblue;
     color: #212121;
     font-family: 'Josefin Sans', sans-serif;
@@ -269,6 +273,16 @@ nav{
     font-weight: 600;
     border: 2px solid royalblue;
     text-align: center;
+    border-radius: 50%;
+
+}
+.page-cta_action{
+    width: 20%;
+    height: 30px;
+    margin-left: 40%;
+}
+.page-cta_button a{
+    color: white;
 }
 
 
