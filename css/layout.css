@@ -407,7 +407,8 @@ footer .ant-mailchimp .ant-mailchim-form form button {
     box-shadow: none;
     outline: none;
     color: black;
-    width: 25%;
+    width: 90%;
+    margin-left: 10px;
 }
 
 footer .ant-mailchimp .ant-mailchim-form form button:hover,
